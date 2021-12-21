@@ -27,36 +27,3 @@ $ bundle exec jekyll serve
 ## Run
 
 `$ bundle exec jekyll serve`
-
-## Use
-
-### Structure
-
-.  
-├── 404.html  
-├── Gemfile  
-├── Gemfile.lock  
-├── README.md  
-├── _config.  
-├── _posts  
-│   ├── 2019-12-23-top-2019.md  
-├── _site  
-│   ├── 2019  
-│   │   └── 12  
-│   │       ├── 23  
-│   │       │   ├── top-2019.html  
-│   ├── 404.html  
-│   ├── README.md  
-│   ├── assets  
-│   │   ├── ???  
-│   ├── favicon.ico  
-│   ├── feed.xml  
-│   ├── index.html  
-│   └── jekyll  
-│       └── ???  
-├── assets  
-│   ├── css  
-│   ├── images  
-│   ├── js  
-├── favicon.ico  
-└── index.markdown  
