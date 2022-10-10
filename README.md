@@ -3,13 +3,14 @@
 ## Install
 
 ### Check
-
-ruby
-`ruby --version`
-gem
-`gem --version`
-bundler
-`bundler -v`
+```bash
+# ruby   
+$ ruby --version
+# gem
+$ gem --version
+# bundler
+$ bundler -v
+```
 
 ^install if no
 
@@ -26,4 +27,6 @@ $ bundle exec jekyll serve
 
 ## Run
 
-`$ bundle exec jekyll serve`
+```bash
+$ bundle exec jekyll serve`
+```
