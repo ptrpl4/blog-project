@@ -22,3 +22,9 @@ git submodule update --remote --merge
 ```shell
 hugo server
 ```
+
+## Content
+```shell
+hugo new content posts/new-letters.md
+hugo server --buildDrafts
+```
