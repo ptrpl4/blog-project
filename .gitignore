@@ -10,3 +10,8 @@ vendor/
 
 # Other
 .idea
+.DS_Store
+
+# Ruby
+.ruby-version
+Gemfile.lock
