@@ -11,3 +11,14 @@ git -v
 hugo env
 ```
 
+## Maintain
+### Theme
+```shell
+# theme update (more info - https://github.com/adityatelange/hugo-PaperMod)
+git submodule update --remote --merge
+```
+
+## Run
+```shell
+hugo server
+```
