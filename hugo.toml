@@ -1,4 +1,5 @@
 baseURL = 'https://ptrpl4.github.io/blog-project/'
+defaultContentLanguage = "ru"
 languageCode = 'ru-ru'
 title = 'wtf-is-going-on'
 theme = [ "PaperMod" ]
