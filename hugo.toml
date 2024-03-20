@@ -1,20 +1,28 @@
 baseURL = 'https://ptrpl4.github.io/blog-project/'
-defaultContentLanguage = "ru"
+defaultContentLanguage = 'ru'
 languageCode = 'ru-ru'
 title = 'wtf-is-going-on'
-theme = [ "PaperMod" ]
-googleAnalytics = "G-4KFQHHFCTF"
+theme = [ 'PaperMod' ]
 
-[Params]
-    DateFormat = "2006-01-02"
-    Author = "Pyotr V"
-    twitter = "x"
-    telegram = "x"
-    instagram = "x"
-    github = "x"
-    favicon = "favicon.ico"
+[params]
+    subtitle = 'Never asked for this'
+    dateFormat = '2006-01-02
+    author = 'Pyotr V'
+    twitter = 'x'
+    telegram = 'x'
+    instagram = 'x'
+    github = 'x'
 
-[[menu.main]]
- name = "Видеоигры"
- url = "categories/видеоигры"
- weight = 1
+[menus]
+[[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+[[menus.main]]
+    name = 'Видеоигры'
+    url = 'categories/видеоигры'
+    weight = 1
+
+[services]
+[services.googleAnalytics]
+    ID = 'G-4KFQHHFCTF'
