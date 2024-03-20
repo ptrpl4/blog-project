@@ -6,7 +6,7 @@ theme = [ 'PaperMod' ]
 
 [params]
     subtitle = 'Never asked for this'
-    dateFormat = '2006-01-02
+    dateFormat = '2006-01-02'
     author = 'Pyotr V'
     twitter = 'x'
     telegram = 'x'
