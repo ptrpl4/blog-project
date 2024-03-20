@@ -3,3 +3,18 @@ defaultContentLanguage = "ru"
 languageCode = 'ru-ru'
 title = 'wtf-is-going-on'
 theme = [ "PaperMod" ]
+googleAnalytics = "G-4KFQHHFCTF"
+
+[Params]
+    DateFormat = "2006-01-02"
+    Author = "Pyotr V"
+    twitter = "x"
+    telegram = "x"
+    instagram = "x"
+    github = "x"
+    favicon = "favicon.ico"
+
+[[menu.main]]
+ name = "Видеоигры"
+ url = "categories/видеоигры"
+ weight = 1
