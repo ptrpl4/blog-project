@@ -23,6 +23,4 @@ theme = [ 'PaperMod' ]
     url = 'categories/видеоигры'
     weight = 1
 
-[services]
-[services.googleAnalytics]
-    ID = 'G-4KFQHHFCTF'
+googleAnalytics = 'G-4KFQHHFCTF'
