@@ -24,3 +24,11 @@ theme = [ 'PaperMod' ]
     weight = 1
 
 googleAnalytics = 'G-4KFQHHFCTF'
+
+[params.homeInfoParams]
+Title = "🫥"
+Content = "Just another one website"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/ptrpl4"
