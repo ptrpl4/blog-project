@@ -12,19 +12,28 @@ hugo env
 ```
 
 ## Maintain
+
 ### Theme
+
 ```shell
 # theme update (more info - https://github.com/adityatelange/hugo-PaperMod)
 git submodule update --remote --merge
 ```
 
 ## Run
+
 ```shell
 hugo server
 ```
 
 ## Content
+
 ```shell
 hugo new content posts/new-letters.md
 hugo server --buildDrafts
 ```
+
+## Helpers
+
+- yaml-to-toml https://transform.tools/yaml-to-toml
+- theme wiki https://github.com/adityatelange/hugo-PaperMod/wiki
