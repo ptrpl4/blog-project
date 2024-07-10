@@ -1,7 +1,9 @@
 +++
 title = 'Something From 2023'
+summary = 'Noticable stuff'
 date = 2024-07-09T20:43:53+08:00
 draft = false
+ShowToc = false
 +++
 
 ## movies
