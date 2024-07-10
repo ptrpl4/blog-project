@@ -12,6 +12,8 @@ theme = [ 'PaperMod' ]
     telegram = 'x'
     instagram = 'x'
     github = 'x'
+    disableScrollToTop = false
+    footer.hideCopyright = true
 
 [menus]
 [[menus.main]]
