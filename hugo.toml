@@ -5,10 +5,12 @@ title = 'wtf-is-going-on'
 theme = [ 'PaperMod' ]
 
 [menus]
-	[menus.main]
+    [[menus.main]]
     name = 'Home'
     pageRef = '/'
     weight = 1
+    
+    [[menus.main]]
     name = 'Видеоигры'
     url = 'categories/видеоигры'
     weight = 1
@@ -24,14 +26,14 @@ github = 'x'
 disableScrollToTop = false
 footer.hideCopyright = true
 
-	[params.homeInfoParams]
-	Title = "🫥"
-	Content = "Just another one website"
+    [params.homeInfoParams]
+    Title = "🫥"
+    Content = "Just another one website"
 
- 	[[params.socialIcons]]
-	name = "github"
-	url = "https://github.com/ptrpl4"
+    [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ptrpl4"
 
 [services]
-	[services.googleAnalytics]
-	ID = 'G-4KFQHHFCTF'
+    [services.googleAnalytics]
+    ID = 'G-4KFQHHFCTF'
