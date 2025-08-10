@@ -1,5 +1,5 @@
 build_hugo:
-	docker build -t my-hugo-image --build-arg HUGO_VERSION=0.146.0 .
+	docker build -t my-hugo-image --build-arg HUGO_VERSION=0.146.7 .
 
 run:
 	docker run -p 1313:1313 -v $(PWD):/src my-hugo-image

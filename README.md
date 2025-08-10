@@ -11,7 +11,16 @@ git submodule update --remote --merge
 
 ## Run
 
-Last checked Hugo version - v0.146.0
+### Hugo Version
+
+- Last checked Hugo version - v0.146.7
+- Latest hugo [releases](https://github.com/gohugoio/hugo/releases)
+
+Places to check:
+
+- .github/workflows/hugo.yaml
+- Makefile
+- README.md
 
 ### Local
 
