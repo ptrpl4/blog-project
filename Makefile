@@ -11,4 +11,4 @@ shell:
 	docker run -it -v $(PWD):/src my-hugo-image /bin/sh
 
 new-post:
-	docker run -v $(PWD):/src my-hugo-image hugo new content posts/$(date +%Y-%m-%d)-$(POST).md
+	docker run -v $(PWD):/src my-hugo-image hugo new content posts/`date +%Y-%m-%d`-$(POST).md

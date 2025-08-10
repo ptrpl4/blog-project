@@ -29,7 +29,7 @@ make run
 
 make dev # drafts mode
 
-make new POST=my-new-article # create post (date=today)
+make new-post POST=my-new-article # create post (date=today)
 ```
 
 ## Content Management
