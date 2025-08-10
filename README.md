@@ -1,16 +1,6 @@
 # Readme
 
-## Installation
-
-```shell
-# install hugo and git
-brew install hugo git
-
-# check current hugo info
-hugo env
-```
-
-## Maintain
+## Maintaining
 
 ### Theme
 
@@ -21,9 +11,12 @@ git submodule update --remote --merge
 
 ## Run
 
+Last checked Hugo version - v0.146.0
+
 ### Local
 
 ```shell
+brew install hugo
 hugo server
 ```
 
@@ -31,13 +24,15 @@ hugo server
 
 ```shell
 make build_hugo
+
 make run
+
 make dev # drafts mode
 
 make new POST=my-new-article # create post (date=today)
 ```
 
-## Content
+## Content Management
 
 ```shell
 hugo new content posts/2025-12-30-new-letters.md
