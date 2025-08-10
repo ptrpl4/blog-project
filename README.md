@@ -7,7 +7,6 @@
 brew install hugo git
 
 # check current hugo info
-git -v
 hugo env
 ```
 
@@ -22,8 +21,20 @@ git submodule update --remote --merge
 
 ## Run
 
+### Local
+
 ```shell
 hugo server
+```
+
+### Docker
+
+```shell
+make build_hugo
+make run
+make dev # drafts mode
+
+make new POST=my-new-article # create post (date=today)
 ```
 
 ## Content
