@@ -1,0 +1,64 @@
+# Site Configuration
+baseURL: "https://ptrpl4.github.io/blog-project/"
+defaultContentLanguage: "en"
+theme:
+  - "PaperMod"
+
+# Language Configuration
+languages:
+  en:
+    weight: 1
+    title: "wtf-is-going-on"
+    languageName: "English"
+    contentDir: "content/en"
+
+  ru:
+    weight: 2
+    title: "wtf-is-going-on"
+    languageName: "Русский"
+    contentDir: "content/ru"
+
+# Global Parameters
+params:
+  subtitle: "Never asked for this"
+  dateFormat: "2 January 2006"
+  disableScrollToTop: true
+
+  homeInfoParams:
+    Title: "🫥"
+    Content: "Just another website"
+
+  footer:
+    hideCopyright: true
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/ptrpl4"
+
+# English Menus
+menus:
+  main:
+    - identifier: "videogames"
+      name: "🎮"
+      url: "categories/videogames"
+      weight: 1
+    - identifier: "books"
+      name: "📚"
+      url: "categories/books"
+      weight: 2
+    - identifier: "movies"
+      name: "🍿"
+      url: "categories/movies"
+      weight: 3
+    - identifier: "tech"
+      name: "💻"
+      url: "categories/tech"
+      weight: 4
+    - identifier: "music"
+      name: "🎵"
+      url: "categories/music"
+      weight: 5
+    - identifier: "podcast"
+      name: "🎙️"
+      url: "categories/podcast"
+      weight: 6
