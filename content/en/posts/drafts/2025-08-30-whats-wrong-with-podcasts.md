@@ -1,3 +1,7 @@
+---
+draft : true
+---
+
 ## Why
 
 While I was writing post about podcasts, how I love it and how many hidden gems you may not seen (rus), I remebmered also many things that are not "done" in this medium. And its still sad and strange. Ofcourse main reasion for that - podcast as idea is not well structured. You may create anything with your voice, maybe even with picture and call it podcast. But all other 'attributs' of podcast will be unclear.
