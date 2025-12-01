@@ -2,7 +2,7 @@
 title : 'Finally, Big MacBook I ever wanted'
 summary : 'MacBookProAirMax 14.5inch on M6-Ultra_Pro-Miniv2'
 date : 2025-12-01
-draft : true
+draft : false
 categories : ['tech']
 ---
 
