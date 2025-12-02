@@ -1,6 +1,6 @@
-FROM alpine:3.19
+FROM alpine:3.22
 
-ARG HUGO_VERSION=0.146.7
+ARG HUGO_VERSION=0.152.2
 
 RUN apk add --no-cache gcompat libstdc++ wget \
     && wget -O - "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-arm64.tar.gz" | tar -xz \
