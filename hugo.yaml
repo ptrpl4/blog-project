@@ -25,7 +25,6 @@ params:
   disableScrollToTop: true
 
   homeInfoParams:
-    Title: "🫥"
     Content: "Just another website"
 
   footer:
