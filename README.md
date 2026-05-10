@@ -22,9 +22,8 @@ git submodule update --remote --merge
 
 Places to check (in case of update):
 
-- .github/workflows/hugo.yaml
-- Makefile
-- README.md
+- `.env` — single source of truth for `HUGO_VERSION` and `ALPINE_VERSION`
+- README.md — the "last checked" line above
 
 ### Local
 
@@ -43,6 +42,15 @@ make run
 make run_dev # drafts mode
 
 make new-post POST=my-new-article # create post (date=today)
+```
+
+`make` reads versions from `.env` and passes them as build-args. A bare `podman build` (without `make`) must pass them explicitly:
+
+```shell
+podman build \
+  --build-arg HUGO_VERSION=$(. ./.env && echo $HUGO_VERSION) \
+  --build-arg ALPINE_VERSION=$(. ./.env && echo $ALPINE_VERSION) \
+  -t my-hugo-image .
 ```
 
 ## Content Management

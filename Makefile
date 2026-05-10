@@ -1,10 +1,14 @@
-HUGO_VERSION ?= 0.152.2
+include .env
+export
+
 IMAGE_NAME ?= my-hugo-image
 
 DOCKER ?= podman
 
 build_hugo:
-	$(DOCKER) build -t $(IMAGE_NAME) --build-arg HUGO_VERSION=$(HUGO_VERSION) .
+	$(DOCKER) build -t $(IMAGE_NAME) \
+		--build-arg HUGO_VERSION=$(HUGO_VERSION) \
+		--build-arg ALPINE_VERSION=$(ALPINE_VERSION) .
 
 run:
 	$(DOCKER) run --rm -p 1313:1313 -v $(PWD):/src $(IMAGE_NAME)

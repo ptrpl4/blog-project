@@ -7,7 +7,8 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    # available runner images: https://github.com/actions/runner-images
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
       pages: write

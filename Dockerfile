@@ -1,6 +1,7 @@
-FROM alpine:3.22
+ARG ALPINE_VERSION
+FROM alpine:${ALPINE_VERSION}
 
-ARG HUGO_VERSION=0.152.2
+ARG HUGO_VERSION
 ARG TARGETARCH
 
 RUN apk add --no-cache gcompat libstdc++ wget \
