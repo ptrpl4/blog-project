@@ -1,6 +1,7 @@
 # Site Configuration
 baseURL: "https://ptrpl4.github.io/blog-project/"
 defaultContentLanguage: "en"
+enableRobotsTXT: true
 theme:
   - "PaperMod"
 
@@ -21,7 +22,7 @@ languages:
 # Global Parameters
 params:
   subtitle: "Never asked for this"
-  dateFormat: "2 January 2006"
+  dateFormat: "02.01.2006"
   disableScrollToTop: true
 
   homeInfoParams:
@@ -34,7 +35,7 @@ params:
     - name: "github"
       url: "https://github.com/ptrpl4"
 
-# English Menus
+# Menus
 menus:
   main:
     - identifier: "videogames"
