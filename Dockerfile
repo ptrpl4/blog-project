@@ -1,10 +1,12 @@
 FROM alpine:3.22
 
 ARG HUGO_VERSION=0.152.2
+ARG TARGETARCH
 
 RUN apk add --no-cache gcompat libstdc++ wget \
-    && wget -O - "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-arm64.tar.gz" | tar -xz \
-    && mv hugo /usr/local/bin/ \
+    && wget -O /tmp/hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-${TARGETARCH}.tar.gz" \
+    && tar -xzf /tmp/hugo.tar.gz -C /usr/local/bin hugo \
+    && rm /tmp/hugo.tar.gz \
     && apk del wget \
     && adduser -D hugo
 
