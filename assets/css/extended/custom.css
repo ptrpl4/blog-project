@@ -1,0 +1,5 @@
+/* Home intro is styled as a 320px hero by the theme; shrink it to its content. */
+.home-info.first-entry {
+    min-height: auto;
+    margin: var(--gap) 0;
+}
