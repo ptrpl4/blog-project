@@ -67,7 +67,7 @@ menus:
       name: "🎵"
       url: "categories/music"
       weight: 5
-    - identifier: "podcast"
+    - identifier: "podcasts"
       name: "🎙️"
-      url: "categories/podcast"
+      url: "categories/podcasts"
       weight: 6

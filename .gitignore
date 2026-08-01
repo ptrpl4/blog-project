@@ -10,6 +10,11 @@ hugo_stats.json
 # Unpublished drafts — kept local, never committed
 content/*/posts/drafts/
 
+# Obsidian — vault root is content/; per-machine UI state only, app.json is tracked
+content/.obsidian/workspace.json
+content/.obsidian/appearance.json
+content/.obsidian/core-plugins.json
+
 # Other
 .DS_Store
 .vscode
