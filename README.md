@@ -1,50 +1,38 @@
-# Readme
+# wtf-is-going-on
 
-## Components
+Personal blog. Hugo + [PaperMod](https://github.com/adityatelange/hugo-PaperMod), bilingual (en/ru), deployed to GitHub Pages on every push to `main`.
 
-### Theme
+Live at **<https://ptrpl4.github.io/blog-project/>**
 
-Current theme - [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
-
-```shell
-# add existing version
-git submodule update --init --recursive
-# update to last version
-git submodule update --remote --merge
-```
-
-## Hugo
-
-### Hugo Version
-
-- Last checked Hugo version - v0.146.7
-- Latest hugo [releases](https://github.com/gohugoio/hugo/releases)
-
-Places to check (in case of update):
-
-- `.env` — single source of truth for `HUGO_VERSION` and `ALPINE_VERSION`
-- README.md — the "last checked" line above
-
-### Local
+## Setup
 
 ```shell
-brew install hugo
-hugo server
+git submodule update --init --recursive   # theme
+make build_hugo                           # local Hugo image
 ```
 
-### Docker
+## Serve
 
 ```shell
-make build_hugo
-
-make run
-
-make run_dev # drafts mode
-
-make new-post POST=my-new-article # create post (date=today)
+make run       # published content
+make run_dev   # + drafts and future-dated posts
 ```
 
-`make` reads versions from `.env` and passes them as build-args. A bare `podman build` (without `make`) must pass them explicitly:
+Both listen on <http://localhost:1313>. Without podman, `brew install hugo` and use `hugo server` / `hugo server --buildDrafts`.
+
+## Write
+
+Posts are page bundles under `content/{en,ru}/posts/` — one folder per post, images alongside the text:
+
+```shell
+hugo new content/en/posts/$(date +%F)-some-slug/index.md
+```
+
+Drafts live in `content/{en,ru}/posts/drafts/`. Flip `draft: false` to publish.
+
+## Versions
+
+`.env` is the single source of truth for `HUGO_VERSION` and `ALPINE_VERSION`, consumed by both the Makefile and CI. A bare `podman build` (without `make`) must pass them explicitly:
 
 ```shell
 podman build \
@@ -53,16 +41,4 @@ podman build \
   -t my-hugo-image .
 ```
 
-## Content Management
-
-```shell
-hugo new content posts/2025-12-30-new-letters.md
-hugo server --buildDrafts
-```
-
-## Helpers
-
-### Docs and examples
-
-- theme [wiki](https://github.com/adityatelange/hugo-PaperMod/wiki)
-- hugo [docs](https://gohugo.io/documentation/)
+Upgrade the theme with `git submodule update --remote --merge`.

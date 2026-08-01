@@ -19,11 +19,8 @@ run_dev:
 shell:
 	$(DOCKER) run --rm -it -v $(PWD):/src my-hugo-image sh
 
-new_post_ru:
-	$(DOCKER) run --rm -v $(PWD):/src $(IMAGE_NAME) hugo new content/ru/posts/`date +%Y-%m-%d`-$(POST).md
-
-new_post_en:
-	$(DOCKER) run --rm -v $(PWD):/src $(IMAGE_NAME) hugo new content/en/posts/`date +%Y-%m-%d`-$(POST).md
-
 clean:
+	rm -rf public resources .hugo_build.lock
 	$(DOCKER) rmi $(IMAGE_NAME) 2>/dev/null || true
+
+.PHONY: build_hugo run run_dev shell clean

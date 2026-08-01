@@ -11,15 +11,13 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       contents: write
-      pages: write
-      id-token: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v4
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v7
         with:
           submodules: true
-          fetch-depth: 0
 
       - name: Read .env
         id: hugo-version
@@ -27,6 +25,7 @@ jobs:
           . ./.env
           echo "HUGO_VERSION=${HUGO_VERSION}" >> "${GITHUB_OUTPUT}"
 
+      # https://github.com/peaceiris/actions-hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -35,9 +34,9 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      # https://github.com/peaceiris/actions-gh-pages
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

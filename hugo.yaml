@@ -10,13 +10,13 @@ languages:
   en:
     weight: 1
     title: "wtf-is-going-on"
-    languageName: "English"
+    label: "English"
     contentDir: "content/en"
 
   ru:
     weight: 2
     title: "wtf-is-going-on"
-    languageName: "Русский"
+    label: "Русский"
     contentDir: "content/ru"
 
 # Global Parameters
@@ -30,10 +30,19 @@ params:
 
   footer:
     hideCopyright: true
+    text: "written with ❤️ and 🤬"
 
   socialIcons:
     - name: "github"
       url: "https://github.com/ptrpl4"
+
+# Markup
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
 
 # Menus
 menus:
