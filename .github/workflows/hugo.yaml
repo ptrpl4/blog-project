@@ -40,3 +40,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          # gh-pages is generated output: replace it with a single parentless
+          # commit each deploy instead of accumulating history
+          force_orphan: true
