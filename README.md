@@ -28,7 +28,9 @@ Posts are page bundles under `content/{en,ru}/posts/` — one folder per post, i
 hugo new content/en/posts/$(date +%F)-some-slug/index.md
 ```
 
-Drafts live in `content/{en,ru}/posts/drafts/`. Flip `draft: false` to publish.
+Drafts live in `content/{en,ru}/posts/drafts/` and are gitignored — local only, no backup.
+To publish, move the bundle folder up to `posts/` **and** set `draft: false`. The folder name
+means nothing to Hugo; only the flag decides.
 
 ## Versions
 

@@ -4,8 +4,8 @@ FROM alpine:${ALPINE_VERSION}
 ARG HUGO_VERSION
 ARG TARGETARCH
 
-RUN apk add --no-cache gcompat libstdc++ wget \
-    && wget -O /tmp/hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-${TARGETARCH}.tar.gz" \
+RUN apk add --no-cache wget \
+    && wget -O /tmp/hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-${TARGETARCH}.tar.gz" \
     && tar -xzf /tmp/hugo.tar.gz -C /usr/local/bin hugo \
     && rm /tmp/hugo.tar.gz \
     && apk del wget \
