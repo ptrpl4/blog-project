@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://ptrpl4.github.io/blog-project/sitemap.xml
