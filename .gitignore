@@ -7,6 +7,9 @@ hugo_stats.json
 # Temporary lock file while building
 /.hugo_build.lock
 
+# Unpublished drafts — kept local, never committed
+content/*/posts/drafts/
+
 # Other
 .DS_Store
 .vscode
